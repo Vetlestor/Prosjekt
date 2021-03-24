@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prosjekt.FindWineController">
+   <children>
+      <Button fx:id="addNewWine" layoutX="382.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddNewWine" text="Add new wine" />
+      <ListView fx:id="wineList" layoutX="14.0" layoutY="100.0" onMouseClicked="#showWineInfo" prefHeight="150.0" prefWidth="200.0" />
+      <Button fx:id="back" layoutX="14.0" layoutY="265.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <TextArea fx:id="wineInfo" layoutX="282.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Find wine">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="14.0" text="Wine info">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDeleteWine" layoutX="332.0" layoutY="252.0" mnemonicParsing="false" onAction="#onDeleteWine" prefHeight="27.0" prefWidth="150.0" text="Delete selected wine" />
+      <ComboBox fx:id="cbFilter" layoutX="14.0" layoutY="59.0" onAction="#filterList" prefHeight="26.0" prefWidth="104.0" value="Filter list" />
+   </children>
+</AnchorPane>

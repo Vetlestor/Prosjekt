@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prosjekt.AddNewWineController">
+   <children>
+      <Label layoutX="22.0" layoutY="77.0" text="Name" />
+      <Label layoutX="22.0" layoutY="178.0" text="Origin" />
+      <Label layoutX="22.0" layoutY="208.0" text="Price" />
+      <Label layoutX="22.0" layoutY="150.0" text="Type" />
+      <Label layoutX="22.0" layoutY="236.0" text="Alcohol percentage" />
+      <Label layoutX="299.0" layoutY="77.0" text="Write a comment" />
+      <TextField fx:id="name" layoutX="81.0" layoutY="72.0" prefHeight="27.0" prefWidth="161.0" />
+      <TextField fx:id="origin" layoutX="84.0" layoutY="173.0" prefHeight="27.0" prefWidth="73.0" />
+      <TextField fx:id="price" layoutX="84.0" layoutY="203.0" prefHeight="27.0" prefWidth="73.0" />
+      <TextField fx:id="alcoholePercentage" layoutX="164.0" layoutY="231.0" prefHeight="27.0" prefWidth="73.0" />
+      <TextField fx:id="comment" alignment="TOP_LEFT" layoutX="299.0" layoutY="97.0" prefHeight="124.0" prefWidth="167.0" />
+      <ToggleButton fx:id="setAsFavorite" layoutX="359.0" layoutY="19.0" mnemonicParsing="false" onAction="#onSetAsFavorite" text="Set as favorite" />
+      <Label layoutX="26.0" layoutY="20.0" text="Add a new wine">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="create" layoutX="299.0" layoutY="247.0" mnemonicParsing="false" onAction="#onFindWine" prefHeight="27.0" prefWidth="167.0" text="Create" textFill="#16c316" />
+      <Button fx:id="btnBack" layoutX="22.0" layoutY="261.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Label layoutX="21.0" layoutY="117.0" text="Rating" />
+      <ChoiceBox fx:id="rating" layoutX="86.0" layoutY="112.0" prefHeight="27.0" prefWidth="49.0" />
+      <ChoiceBox fx:id="type" layoutX="84.0" layoutY="145.0" prefHeight="27.0" prefWidth="73.0" />
+      <Label layoutX="247.0" layoutY="77.0" text="*" />
+      <Label layoutX="139.0" layoutY="117.0" text="*" />
+   </children>
+</AnchorPane>
